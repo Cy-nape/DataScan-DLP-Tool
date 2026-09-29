@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datascan"
+version = "0.1.0"
+description = "Lightweight CLI scanner for sensitive data patterns"
+requires-python = ">=3.10"
+dependencies = ["rich"]
+
+[project.scripts]
+datascan = "datascan.scanner:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
